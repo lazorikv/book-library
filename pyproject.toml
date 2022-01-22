@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "booklibrary"
+version = "0.1.0"
+description = ""
+authors = ["Andrew Hrimov <andrew.hrimov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.71.0"
+uvicorn = "^0.17.0"
+pydantic = {extras = ["email"], version = "^1.9.0"}
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
